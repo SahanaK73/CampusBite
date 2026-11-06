@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canteen Dashboard - CampusBite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container page">
+    <div class="dash-head">
+      <div>
+        <h1>Canteen Dashboard</h1>
+        <p class="page-sub" style="margin-bottom:0">For canteen staff: update orders, spot add-ons, and mark food available or sold out.</p>
+      </div>
+      <div class="dash-select">
+        <label for="canteenSelect">Select Canteen:</label>
+        <select id="canteenSelect" class="select-input"></select>
+      </div>
+    </div>
+
+    <div class="dash-grid">
+      <section aria-labelledby="ordersHeading">
+        <h2 id="ordersHeading">Orders</h2>
+        <p class="muted" id="ordersSummary"></p>
+        <div id="dashOrders"></div>
+      </section>
+
+      <section aria-labelledby="availHeading">
+        <h2 id="availHeading">Food Availability</h2>
+        <p class="muted">Click a button to switch between Available and Sold Out.</p>
+        <div class="avail-card" id="dashAvailability"></div>
+      </section>
+    </div>
+
+    <div class="reset-row">
+      <button class="btn btn-outline btn-small" id="resetBtn">Reset demo data</button>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

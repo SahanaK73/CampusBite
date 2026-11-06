@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery Partner - CampusBite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container page">
+    <div class="dash-head">
+      <div>
+        <h1>Delivery Partner</h1>
+        <p class="page-sub" style="margin-bottom:0">Demo app for riders. Pick up the order, ride, then enter the customer's OTP to finish.</p>
+      </div>
+      <div class="dash-select">
+        <label for="riderSelect">I am:</label>
+        <select id="riderSelect" class="select-input"></select>
+      </div>
+    </div>
+    <p class="muted earnings" id="earnings"></p>
+    <div id="riderJobs"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/delivery.js"></script>
+</body>
+</html>

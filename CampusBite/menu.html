@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu - CampusBite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container page">
+    <h1>Menu</h1>
+    <p class="page-sub">Pick a canteen, filter by category or search for your favourite food.</p>
+
+    <section class="filters" aria-label="Filters">
+      <div class="filter-group">
+        <h3>Search</h3>
+        <input type="text" id="searchBox" class="text-input" placeholder="Search for food..." aria-label="Search for food">
+      </div>
+      <div class="filter-group">
+        <h3>Canteen</h3>
+        <div class="pill-row" id="canteenFilters"></div>
+      </div>
+      <div class="filter-group">
+        <h3>Category</h3>
+        <div class="pill-row" id="categoryFilters"></div>
+      </div>
+    </section>
+
+    <p class="result-info" id="resultInfo" aria-live="polite"></p>
+    <div class="grid" id="foodGrid"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
